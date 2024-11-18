@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+   	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="margin-left: 70px;">
+	<div class="bodyFrame">
+	<form class="form" style="margin-top: 50px;">
+        <label for="idInstance">idInstance:</label><br>
+        <input required type="text" class="inputField" id="idInstance" name="idInstance"><br>
+        <label for="apiTokenIsntance">apiTokenInstance:</label><br>
+		<input required type="text" class="inputField2" id="apiTokenIsntance" name="apiTokenIsntance"><br>
+	</form>
+		<button id="getSettings" class="button buttonGreen">getSettings</button><br>
+    	<button id="getStateInstance" class="button buttonGreen" style="margin-bottom: 54px;">getStateInstance</button>
+	<form class="form">
+        <label for="phoneNumber">Phone Number:</label><br>
+        <input required type="tel" class="inputField" id="phoneNumber" name="phoneNumber" value=""><br>
+        <label for="messageText">Message:</label><br>
+        <input required type="text" class="messageField" id="messageText" name="messageText" value="Hello world!"><br>
+    </form>
+	<button id="SendMessage" class="button buttonGreen" style="margin-bottom: 54px;">sendMessage</button>
+    <form class="form">
+    	<label for="phoneNumber2">Phone Number:</label><br>
+        <input required type="tel" class="inputField" id="phoneNumber2" name="phoneNumber2" value=""><br>
+        <label for="messageURL">URL:</label><br>
+        <input required type="text" class="inputField" id="messageURL" name="messageURL" value=""><br>
+    </form>
+    <button id="sendFileByUrl" class="button buttonGreen">sendFileByUrl</button>
+</div>
+	<div class="answerField">
+	<label for="answerFrame">Ответ:</label><br>
+    <textarea id="answerFrame" name="answerFrame" value="" style="width: 500px; height: 675px" readonly></textarea><br>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@green-api/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
+</body>
+</html>
